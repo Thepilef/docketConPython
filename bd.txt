@@ -1,0 +1,26 @@
+drop database coches;
+
+create database coches;
+
+use coches;
+
+create table coches(
+id int auto_increment primary key,
+marca varchar(50),
+modelo varchar(50),
+color varchar(50),
+km int,
+precio int
+);
+
+INSERT INTO coches (marca, modelo, color, km, precio) VALUES
+('Toyota', 'Corolla', 'Blanco', 25000, 15000),
+('Ford', 'Fiesta', 'Azul', 18000, 9500),
+('BMW', 'X5', 'Negro', 45000, 30000),
+('Audi', 'A4', 'Gris', 35000, 22000),
+('Mercedes', 'Clase C', 'Plata', 5000, 35000),
+('Renault', 'Clio', 'Rojo', 12000, 8500),
+('Honda', 'Civic', 'Verde', 30000, 16000),
+('Volkswagen', 'Golf', 'Naranja', 24000, 13500),
+('Nissan', 'Qashqai', 'Azul', 22000, 19000),
+('Peugeot', '208', 'Amarillo', 14000, 10500);
